@@ -33,6 +33,7 @@ public class DashboardView implements Serializable{
         mainColumn.addWidget("NotRouted");
         mainColumn.addWidget("Claimed");
         mainColumn.addWidget("All");
+        mainColumn.addWidget("Observed");
  
         this.model.addColumn(mainColumn);
  
