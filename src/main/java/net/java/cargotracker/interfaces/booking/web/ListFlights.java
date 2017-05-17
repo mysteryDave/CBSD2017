@@ -30,11 +30,11 @@ public class ListFlights {
     @Inject
     private AirServiceFacade airService;
 
-    public List<Flight> getFlights() {
+    public List<Flight> getAllFlights() {
         return allFlights;
     }
 
-    public List<Airport> getAirports() {
+    public List<Airport> getAllPorts() {
         return allPorts;
     }
 
