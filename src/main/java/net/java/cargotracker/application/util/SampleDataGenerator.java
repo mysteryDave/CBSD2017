@@ -12,6 +12,8 @@ import javax.ejb.TransactionAttributeType;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
+import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.cargo.Cargo;
 import net.java.cargotracker.domain.model.cargo.Itinerary;
 import net.java.cargotracker.domain.model.cargo.Leg;
@@ -91,6 +93,59 @@ public class SampleDataGenerator {
         entityManager.persist(SampleLocations.HANGZOU);
         entityManager.persist(SampleLocations.NEWYORK);
         entityManager.persist(SampleLocations.DALLAS);
+    }
+
+    private void loadAirports() { //50 default airports for testing.
+        entityManager.persist(new Airport("ATL", "Atlanta Hartsfield-Jackson"));
+        entityManager.persist(new Airport("DXB", "Dubai International"));
+        entityManager.persist(new Airport("LGW", "London Gatwick"));
+        entityManager.persist(new Airport("LHR", "London Heathrow"));
+        entityManager.persist(new Airport("HKG", "Hong Kong International"));
+        entityManager.persist(new Airport("LAX", "Los Angeles International"));
+        entityManager.persist(new Airport("LCY", "London City"));
+        entityManager.persist(new Airport("LTN", "London Luton"));
+        entityManager.persist(new Airport("STN", "London Stansted"));
+        entityManager.persist(new Airport("SEN", "Southend"));
+        entityManager.persist(new Airport("BHX", "Birmingham International"));
+        entityManager.persist(new Airport("MAN", "Manchester"));
+        entityManager.persist(new Airport("EDI", "Edinburgh"));
+        entityManager.persist(new Airport("GLA", "Glasgow International"));
+        entityManager.persist(new Airport("BRS", "Bristol International"));
+        entityManager.persist(new Airport("NCL", "Newcastle"));
+        entityManager.persist(new Airport("EMA", "East Midlands"));
+        entityManager.persist(new Airport("BFS", "Belfast International"));
+        entityManager.persist(new Airport("LPL", "Liverpool John Lennon"));
+        entityManager.persist(new Airport("LBA", "Leeds Bradford"));
+        entityManager.persist(new Airport("ABZ", "Aberdeen Dyce"));
+        entityManager.persist(new Airport("BHD", "George Best Belfast City"));
+        entityManager.persist(new Airport("SOU", "Southampton"));
+        entityManager.persist(new Airport("CWL", "Cardiff International"));
+        entityManager.persist(new Airport("ORD", "Chicago O'Hare International"));
+        entityManager.persist(new Airport("DFW", "Dallas Fort Worth"));
+        entityManager.persist(new Airport("DEN", "Denver International"));
+        entityManager.persist(new Airport("JFK", "New York John F Kennedy"));
+        entityManager.persist(new Airport("SFO", "San Fransisco International"));
+        entityManager.persist(new Airport("CLT", "Charlotte Douglas"));
+        entityManager.persist(new Airport("LAS", "Las Vegas McCarran"));
+        entityManager.persist(new Airport("PHX", "Phoenix Sky Harbour"));
+        entityManager.persist(new Airport("PEK", "Beijing Capital"));
+        entityManager.persist(new Airport("HND", "Tokyo International"));
+        entityManager.persist(new Airport("CDG", "Paris Charles de Gaulle"));
+        entityManager.persist(new Airport("IST", "Istanbul Ataturk"));
+        entityManager.persist(new Airport("FRA", "Frankfurt am Main"));
+        entityManager.persist(new Airport("AMS", "Amsterdam Schiphol"));
+        entityManager.persist(new Airport("SIN", "Singapore Changi"));
+        entityManager.persist(new Airport("CAN", "Guangzhou Baiyun"));
+        entityManager.persist(new Airport("CGK", "Soekarno-Hatta"));
+        entityManager.persist(new Airport("BKK", "Bangkok Suvarnabhumi"));
+        entityManager.persist(new Airport("MAD", "Madrid Barajas"));
+        entityManager.persist(new Airport("MUC", "Munich International"));
+        entityManager.persist(new Airport("FCO", "Rome Fiumicino Leonardo Da Vinci"));
+        entityManager.persist(new Airport("BCN", "Barcelona International"));
+        entityManager.persist(new Airport("SYD", "Sydney Kingsford Smith"));
+        entityManager.persist(new Airport("BOM", "Mumbai Chhatrapati Shivaji"));
+        entityManager.persist(new Airport("GRU", "Sau Paulo Guarulhos"));
+        entityManager.persist(new Airport("MEX", "Mexico Benito Juarez"));
     }
 
     private void loadSampleVoyages() {
