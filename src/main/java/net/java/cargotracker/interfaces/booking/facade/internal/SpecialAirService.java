@@ -2,6 +2,7 @@ package net.java.cargotracker.interfaces.booking.facade.internal;
 
 
 import net.java.cargotracker.domain.model.airport.Airport;
+import net.java.cargotracker.domain.model.airport.AirportRepo;
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
 
@@ -15,17 +16,10 @@ import java.util.List;
 @ApplicationScoped
 public class SpecialAirService implements AirServiceFacade, Serializable {
 
-    /*
     private static final long serialVersionUID = 1L;
+
     @Inject
-    private BookingService bookingService;
-    @Inject
-    private LocationRepository locationRepository;
-    @Inject
-    private CargoRepository cargoRepository;
-    @Inject
-    private VoyageRepository voyageRepository;
-*/
+    private AirportRepo airportRepo;
 
     @Override
     public void addFlight(short flightNo, Airport from, Date departs, Airport to, Date arrives) {
@@ -49,7 +43,8 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
 
     @Override
     public List<Airport> listAirports() {
-        return null;
+        List<Airport> allPorts = airportRepo.findAll();
+        return allPorts;
     }
 
     @Override

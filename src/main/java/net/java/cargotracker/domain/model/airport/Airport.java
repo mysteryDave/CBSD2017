@@ -1,11 +1,7 @@
 package net.java.cargotracker.domain.model.airport;
 
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -18,6 +14,10 @@ import org.apache.commons.lang3.Validate;
  */
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Airport.findAll", query = "Select l from Airport l"),
+        @NamedQuery(name = "Airport.findByCode",
+                query = "Select l from Airport l where l.code = :code")})
 public class Airport implements Serializable {
 
     private static final String IATA_PORT_PATTERN = "[A-Z]{3}";
@@ -28,8 +28,9 @@ public class Airport implements Serializable {
     private Long id;
 
     @NotNull
+    @Column
     @Pattern(regexp = IATA_PORT_PATTERN)
-    private String sIATAcode;
+    private String code;
 
     @NotNull
     private String name;
@@ -38,19 +39,17 @@ public class Airport implements Serializable {
 
     public Airport(String code, String name) {
         Validate.notNull(code);
-        Validate.matchesPattern(IATA_PORT_PATTERN,code);
+        Validate.matchesPattern(code,IATA_PORT_PATTERN);
         Validate.notNull(name);
 
-        this.sIATAcode = code;
+        this.code = code;
         this.name = name;
     }
 
     /**
      * @return IATA code for this location, e.g. "LGW".
      */
-    public String getIATAcode() {
-        return sIATAcode;
-    }
+    public String getCode() { return code; }
 
     /**
      * @return Actual name of this location, e.g. "London Gatwick".
@@ -80,11 +79,11 @@ public class Airport implements Serializable {
     }
 
     public boolean sameIdentityAs(Airport other) {
-        return this.sIATAcode.equalsIgnoreCase(other.sIATAcode);
+        return this.code.equalsIgnoreCase(other.code);
     }
 
     @Override
     public String toString() {
-        return name + " [" + sIATAcode + "]";
+        return name + " [" + code + "]";
     }
 }

@@ -52,6 +52,7 @@ public class SampleDataGenerator {
         loadSampleLocations();
         loadSampleVoyages();
         loadSampleCargos();
+        loadAirports();
     }
 
     private void unLoadAll() {
@@ -75,6 +76,7 @@ public class SampleDataGenerator {
         entityManager.createQuery("Delete from CarrierMovement").executeUpdate();
         entityManager.createQuery("Delete from Voyage").executeUpdate();
         entityManager.createQuery("Delete from Location").executeUpdate();
+        entityManager.createQuery("Delete from Airport").executeUpdate();
     }
 
     private void loadSampleLocations() {
@@ -96,6 +98,8 @@ public class SampleDataGenerator {
     }
 
     private void loadAirports() { //50 default airports for testing.
+        logger.info("Loading sample airports.");
+
         entityManager.persist(new Airport("ATL", "Atlanta Hartsfield-Jackson"));
         entityManager.persist(new Airport("DXB", "Dubai International"));
         entityManager.persist(new Airport("LGW", "London Gatwick"));
