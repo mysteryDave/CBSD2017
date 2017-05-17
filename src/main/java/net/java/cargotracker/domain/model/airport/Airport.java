@@ -1,7 +1,6 @@
 package net.java.cargotracker.domain.model.airport;
 
 import java.io.Serializable;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,8 +9,6 @@ import javax.persistence.NamedQuery;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
-import net.java.cargotracker.domain.model.location.Location;
-import net.java.cargotracker.domain.model.location.UnLocode;
 import org.apache.commons.lang3.Validate;
 
 /**

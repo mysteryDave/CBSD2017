@@ -3,8 +3,6 @@ package net.java.cargotracker.interfaces.booking.web;
 import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.BookingServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.dto.CargoRoute;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

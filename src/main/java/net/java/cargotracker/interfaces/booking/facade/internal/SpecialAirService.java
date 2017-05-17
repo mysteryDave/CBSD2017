@@ -1,23 +1,9 @@
 package net.java.cargotracker.interfaces.booking.facade.internal;
 
-import net.java.cargotracker.application.BookingService;
+
 import net.java.cargotracker.domain.model.airport.Airport;
-import net.java.cargotracker.domain.model.cargo.Cargo;
-import net.java.cargotracker.domain.model.cargo.CargoRepository;
-import net.java.cargotracker.domain.model.cargo.Itinerary;
-import net.java.cargotracker.domain.model.cargo.TrackingId;
 import net.java.cargotracker.domain.model.flight.Flight;
-import net.java.cargotracker.domain.model.location.Location;
-import net.java.cargotracker.domain.model.location.LocationRepository;
-import net.java.cargotracker.domain.model.location.UnLocode;
-import net.java.cargotracker.domain.model.voyage.VoyageRepository;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.BookingServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.dto.CargoRoute;
-import net.java.cargotracker.interfaces.booking.facade.dto.RouteCandidate;
-import net.java.cargotracker.interfaces.booking.facade.internal.assembler.CargoRouteDtoAssembler;
-import net.java.cargotracker.interfaces.booking.facade.internal.assembler.ItineraryCandidateDtoAssembler;
-import net.java.cargotracker.interfaces.booking.facade.internal.assembler.LocationDtoAssembler;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

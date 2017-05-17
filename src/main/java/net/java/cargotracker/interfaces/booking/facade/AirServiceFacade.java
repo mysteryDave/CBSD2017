@@ -2,9 +2,6 @@ package net.java.cargotracker.interfaces.booking.facade;
 
 import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.flight.Flight;
-import net.java.cargotracker.interfaces.booking.facade.dto.CargoRoute;
-import net.java.cargotracker.interfaces.booking.facade.dto.Location;
-import net.java.cargotracker.interfaces.booking.facade.dto.RouteCandidate;
 
 import java.util.Date;
 import java.util.List;
