@@ -1,6 +1,7 @@
 package net.java.cargotracker.interfaces.booking.facade;
 
 import net.java.cargotracker.domain.model.airport.Airport;
+import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.flight.Flight;
 
 import java.util.Date;
@@ -21,6 +22,8 @@ public interface AirServiceFacade {
     boolean cxlBook(short flightNo, String flyer, boolean isBusinessClass);
 
     List<Airport> listAirports();
+
+    List<Carrier> listCarriers();
 
     List<Flight> listAllFlights();
 }

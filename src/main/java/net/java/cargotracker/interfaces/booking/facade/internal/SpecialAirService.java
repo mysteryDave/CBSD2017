@@ -3,6 +3,8 @@ package net.java.cargotracker.interfaces.booking.facade.internal;
 
 import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.airport.AirportRepo;
+import net.java.cargotracker.domain.model.carrier.Carrier;
+import net.java.cargotracker.domain.model.carrier.CarrierRepo;
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
 
@@ -20,6 +22,8 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
 
     @Inject
     private AirportRepo airportRepo;
+    @Inject
+    private CarrierRepo carrierRepo;
 
     @Override
     public void addFlight(short flightNo, Airport from, Date departs, Airport to, Date arrives) {
@@ -45,6 +49,12 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
     public List<Airport> listAirports() {
         List<Airport> allPorts = airportRepo.findAll();
         return allPorts;
+    }
+
+    @Override
+    public List<Carrier> listCarriers() {
+        List<Carrier> allLines = carrierRepo.findAll();
+        return allLines;
     }
 
     @Override

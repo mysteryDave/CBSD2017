@@ -14,9 +14,6 @@
             <!-- The default log level of info is best for production, want to
             see verbose output for development. -->
             <property name="eclipselink.logging.level" value="FINEST"/>
-            <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
-            <property name="javax.persistence.schema-generation.scripts.create-target" value="sampleCreate.ddl"/>
-            <property name="javax.persistence.schema-generation.scripts.drop-target" value="sampleDrop.ddl"/>
         </properties>
     </persistence-unit>
 </persistence>

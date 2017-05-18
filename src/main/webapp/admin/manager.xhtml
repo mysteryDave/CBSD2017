@@ -10,7 +10,7 @@
                     <div class="ui-grid-col-1" id="leftCol"/>
                     <div class="ui-grid-col-10" id="mainCol">
                         <h:form id="mainDash">
-                            <p:dashboard id="board" model="#{dashboardView.model}">
+                            <p:dashboard id="board" model="#{managerView.model}">
                                 <p:panel id="Routed" header="Routed" >
                                     <ui:include src="/admin/listRouted.xhtml" class="clearCargoBkg"/>
                                 </p:panel>
@@ -23,8 +23,8 @@
                                 <p:panel id="All" header="All">
                                     <ui:include src="/admin/listAll.xhtml"/>
                                 </p:panel>
-                                <p:panel id="Observed" header="Observed">
-                                    <ui:include src="/admin/listObserved.xhtml"/>
+                                <p:panel id="Carriers" header="Carriers">
+                                    <ui:include src="/admin/listCarriers.xhtml"/>
                                 </p:panel>
                             </p:dashboard>
                         </h:form>

@@ -1,6 +1,7 @@
 package net.java.cargotracker.interfaces.booking.web;
 
 import net.java.cargotracker.domain.model.airport.Airport;
+import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
 
@@ -26,6 +27,7 @@ public class ListFlights {
 
     private List<Flight> allFlights;
     private List<Airport> allPorts;
+    private List<Carrier> allLines;
 
     @Inject
     private AirServiceFacade airService;
@@ -38,10 +40,13 @@ public class ListFlights {
         return allPorts;
     }
 
+    public List<Carrier> getAllLines() { return allLines; }
+
     @PostConstruct
     public void init() {
         allFlights = airService.listAllFlights();
         allPorts = airService.listAirports();
+        allLines = airService.listCarriers();
     }
 
 }

@@ -19,6 +19,7 @@ import net.java.cargotracker.domain.model.cargo.Itinerary;
 import net.java.cargotracker.domain.model.cargo.Leg;
 import net.java.cargotracker.domain.model.cargo.RouteSpecification;
 import net.java.cargotracker.domain.model.cargo.TrackingId;
+import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.handling.CannotCreateHandlingEventException;
 import net.java.cargotracker.domain.model.handling.HandlingEvent;
 import net.java.cargotracker.domain.model.handling.HandlingEventFactory;
@@ -53,6 +54,7 @@ public class SampleDataGenerator {
         loadSampleVoyages();
         loadSampleCargos();
         loadAirports();
+        loadCarriers();
     }
 
     private void unLoadAll() {
@@ -150,6 +152,41 @@ public class SampleDataGenerator {
         entityManager.persist(new Airport("BOM", "Mumbai Chhatrapati Shivaji"));
         entityManager.persist(new Airport("GRU", "Sau Paulo Guarulhos"));
         entityManager.persist(new Airport("MEX", "Mexico Benito Juarez"));
+    }
+
+    private void loadCarriers() { //30 default airlines for testing.
+        logger.info("Loading sample airlines.");
+
+        entityManager.persist(new Carrier("U2", "Easyjet Airline Company"));
+        entityManager.persist(new Carrier("BA", "British Airways"));
+        entityManager.persist(new Carrier("BE", "Flybe"));
+        entityManager.persist(new Carrier("VS", "Virgin Atlantic"));
+        entityManager.persist(new Carrier("ZB", "Monarch"));
+        entityManager.persist(new Carrier("LS", "Jet2.com"));
+        entityManager.persist(new Carrier("MT", "Thomas Cook Airlines"));
+        entityManager.persist(new Carrier("LM", "Loganair"));
+        entityManager.persist(new Carrier("GR", "Aurigny Air Services"));
+        entityManager.persist(new Carrier("BY", "Thomson Airways"));
+        entityManager.persist(new Carrier("FR", "Ryanair"));
+        entityManager.persist(new Carrier("LH", "Deutsche Lufthansa"));
+        entityManager.persist(new Carrier("IB", "Iberia Lineas Aereas de Espana"));
+        entityManager.persist(new Carrier("AF", "Air France"));
+        entityManager.persist(new Carrier("KL", "KLM Royal Dutch Airlines"));
+        entityManager.persist(new Carrier("TK", "Turkish Airlines"));
+        entityManager.persist(new Carrier("SU", "PJSC Aeroflot"));
+        entityManager.persist(new Carrier("SK", "Scandanavian Airlines System (SAS)"));
+        entityManager.persist(new Carrier("DY", "Norwegian Air Shuttle AS"));
+        entityManager.persist(new Carrier("AB", "Air Berlin & Co Luftverkerhs KG"));
+        entityManager.persist(new Carrier("EK", "Emirates"));
+        entityManager.persist(new Carrier("UA", "United Airlines"));
+        entityManager.persist(new Carrier("MU", "China Eastern Airlines"));
+        entityManager.persist(new Carrier("AC", "Air Canada"));
+        entityManager.persist(new Carrier("NH", "All Nippon Airways Co"));
+        entityManager.persist(new Carrier("AA", "American Airlines Inc"));
+        entityManager.persist(new Carrier("WN", "Southwest Airlines Co"));
+        entityManager.persist(new Carrier("DL", "Delta Air Lines Inc"));
+        entityManager.persist(new Carrier("CZ", "China Southern Airlines"));
+        entityManager.persist(new Carrier("CA", "Air China"));
     }
 
     private void loadSampleVoyages() {

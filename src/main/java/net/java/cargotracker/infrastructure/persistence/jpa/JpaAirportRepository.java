@@ -13,13 +13,14 @@ import java.util.List;
 public class JpaAirportRepository implements AirportRepo, Serializable {
 
     private static final long serialVersionUID = 1L;
+
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public Airport find(String code) {
         return entityManager.createNamedQuery("Airport.findByCode",
-                Airport.class).setParameter("xxx", code)
+                Airport.class).setParameter("code", code)
                 .getSingleResult();
     }
 
