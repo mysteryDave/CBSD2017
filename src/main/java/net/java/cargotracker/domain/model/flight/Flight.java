@@ -51,6 +51,7 @@ import javax.persistence.NamedQuery;
 import javax.validation.constraints.NotNull;
 
 import net.java.cargotracker.domain.model.cargo.*;
+import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.handling.HandlingEvent;
 import net.java.cargotracker.domain.model.handling.HandlingHistory;
 import net.java.cargotracker.domain.model.location.Location;
@@ -84,13 +85,18 @@ public class Flight implements Serializable {
 
     @NotNull
     private int number;
+    @ManyToOne
+    @JoinColumn(name = "carrier_id", updatable = false)
+    private Carrier carrier;
 
     public Flight() {}
 
-    public Flight(int number) {
+    public Flight(int number, Carrier airline) {
         Validate.notNull(number, "Tracking ID is required");
+        Validate.notNull(airline, "Flight must be run by an airline.");
 
         this.number = number;
+        this.carrier = airline;
     }
 
     public int getNumber() {
@@ -118,6 +124,6 @@ public class Flight implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("%d03", number);
+        return carrier.getCode() + String.format("%d03", number);
     }
 }

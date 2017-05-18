@@ -198,10 +198,10 @@ public class SampleDataGenerator {
     private void loadFlights() {
         logger.info("Loading sample flights.");
 
-        entityManager.persist(new Flight(101));
-        entityManager.persist(new Flight(999));
-        entityManager.persist(new Flight(299));
-        entityManager.persist(new Flight(911));
+        entityManager.persist(new Flight(101,SampleCarriers.BA));
+        entityManager.persist(new Flight(999, SampleCarriers.BA));
+        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA));
+        entityManager.persist(new Flight(911, SampleCarriers.AA));
     }
 
     private void loadSampleVoyages() {

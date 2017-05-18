@@ -1,6 +1,5 @@
 package net.java.cargotracker.interfaces.booking.facade.internal;
 
-
 import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.airport.AirportRepo;
 import net.java.cargotracker.domain.model.carrier.Carrier;
