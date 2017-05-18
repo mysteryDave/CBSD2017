@@ -86,17 +86,22 @@ public class Flight implements Serializable {
     @ManyToOne
     @JoinColumn(name = "departs_id", updatable = false)
     private Airport departs;
+    @ManyToOne
+    @JoinColumn(name = "arrives_id", updatable = false)
+    private Airport arrives;
 
     public Flight() {}
 
-    public Flight(int number, Carrier airline, Airport from) {
+    public Flight(int number, Carrier airline, Airport from, Airport to) {
         Validate.notNull(number, "Tracking ID is required");
         Validate.notNull(airline, "Flight must be run by an airline.");
         Validate.notNull(from, "Flight must take off somewhere.");
+        Validate.notNull(to, "Flight must land somewhere.");
 
         this.number = number;
         this.carrier = airline;
         this.departs = from;
+        this.arrives = to;
     }
 
     public int getNumber() {
@@ -108,6 +113,8 @@ public class Flight implements Serializable {
     }
 
     public Airport getDeparts() { return departs; }
+
+    public Airport getArrives() { return arrives; }
 
     /**
      * @param object to compare

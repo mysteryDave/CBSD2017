@@ -198,11 +198,11 @@ public class SampleDataGenerator {
     private void loadFlights() {
         logger.info("Loading sample flights.");
 
-        entityManager.persist(new Flight(101, SampleCarriers.BA, SampleAirports.HEATHROW));
-        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK));
-        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT));
-        entityManager.persist(new Flight(911, SampleCarriers.AA, SampleAirports.DENVER));
-        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI));
+        entityManager.persist(new Flight(101, SampleCarriers.BA, SampleAirports.HEATHROW, SampleAirports.EDINBURGH));
+        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK, SampleAirports.PARIS_CDG));
+        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.HEATHROW));
+        entityManager.persist(new Flight(911, SampleCarriers.AA, SampleAirports.DENVER, SampleAirports.NEW_YORK_JFK));
+        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI, SampleAirports.GATWICK));
     }
 
     private void loadSampleVoyages() {
