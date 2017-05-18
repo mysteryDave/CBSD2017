@@ -40,14 +40,7 @@
 package net.java.cargotracker.domain.model.flight;
 
 import java.io.Serializable;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 import net.java.cargotracker.domain.model.cargo.*;
@@ -84,6 +77,7 @@ public class Flight implements Serializable {
     private Long id;
 
     @NotNull
+    @Column(name = "flight_number", updatable = false)
     private int number;
     @ManyToOne
     @JoinColumn(name = "carrier_id", updatable = false)
@@ -102,6 +96,11 @@ public class Flight implements Serializable {
     public int getNumber() {
         return number;
     }
+
+    public Carrier getCarrier() {
+        return carrier;
+    }
+
 
     /**
      * @param object to compare

@@ -11,6 +11,11 @@
             <h:outputText value="#{flight.number}" style="color: #999999;font-size:.8em;"/>
         </p:column>
 
+        <p:column headerText="Carrier">
+            <h:outputText value="#{flight.carrier.name}  " /> -
+            <h:outputText value="#{flight.carrier.code}" style="color: #999999;font-size:.8em;"/>
+        </p:column>
+
     </p:dataTable>
     
 </div>
