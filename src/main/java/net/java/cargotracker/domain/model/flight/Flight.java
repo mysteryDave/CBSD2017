@@ -40,6 +40,7 @@
 package net.java.cargotracker.domain.model.flight;
 
 import java.io.Serializable;
+import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
@@ -80,27 +81,36 @@ public class Flight implements Serializable {
     @NotNull
     @Column(name = "flight_number", updatable = false)
     private int number;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "carrier_id", updatable = false)
     private Carrier carrier;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "departs_id", updatable = false)
     private Airport departs;
+    @NotNull
+    @Temporal(TemporalType.DATE)
+    @Column(name = "depart_time", updatable = false)
+    private Date takeOff;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "arrives_id", updatable = false)
     private Airport arrives;
 
     public Flight() {}
 
-    public Flight(int number, Carrier airline, Airport from, Airport to) {
+    public Flight(int number, Carrier airline, Airport from, Airport to, Date leaves) {
         Validate.notNull(number, "Tracking ID is required");
         Validate.notNull(airline, "Flight must be run by an airline.");
         Validate.notNull(from, "Flight must take off somewhere.");
         Validate.notNull(to, "Flight must land somewhere.");
+        Validate.notNull(leaves, "Take off time must be scheduled.");
 
         this.number = number;
         this.carrier = airline;
         this.departs = from;
+        this.takeOff = leaves;
         this.arrives = to;
     }
 
@@ -115,6 +125,8 @@ public class Flight implements Serializable {
     public Airport getDeparts() { return departs; }
 
     public Airport getArrives() { return arrives; }
+
+    public Date getTakeOff() { return takeOff; }
 
     /**
      * @param object to compare
@@ -137,6 +149,7 @@ public class Flight implements Serializable {
 
     @Override
     public String toString() {
-        return carrier.getCode() + String.format("%d03", number);
+        return carrier.getCode() + String.format("%d03", number) + " " +
+                departs.getCode() + "->" + arrives.getCode();
     }
 }

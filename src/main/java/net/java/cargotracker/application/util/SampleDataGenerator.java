@@ -1,8 +1,6 @@
 package net.java.cargotracker.application.util;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.ejb.Singleton;
@@ -37,6 +35,8 @@ import net.java.cargotracker.domain.model.voyage.SampleVoyages;
 @Singleton
 @Startup
 public class SampleDataGenerator {
+
+    private static final long hour = 60* 60 * 1000;
 
     // TODO See if the logger can be injected.
     private static final Logger logger = Logger.getLogger(
@@ -195,14 +195,19 @@ public class SampleDataGenerator {
         entityManager.persist(SampleCarriers.AIR_CHINA);
     }
 
+
+
     private void loadFlights() {
         logger.info("Loading sample flights.");
 
-        entityManager.persist(new Flight(101, SampleCarriers.BA, SampleAirports.HEATHROW, SampleAirports.EDINBURGH));
-        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK, SampleAirports.PARIS_CDG));
-        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.HEATHROW));
-        entityManager.persist(new Flight(911, SampleCarriers.AA, SampleAirports.DENVER, SampleAirports.NEW_YORK_JFK));
-        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI, SampleAirports.GATWICK));
+        Calendar timeNow = new GregorianCalendar();
+        Date today = timeNow.getTime();
+
+        entityManager.persist(new Flight(101, SampleCarriers.BA, SampleAirports.HEATHROW, SampleAirports.EDINBURGH, new Date(timeNow.getTimeInMillis() + 24 * hour)));
+        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK, SampleAirports.PARIS_CDG, new Date(timeNow.getTimeInMillis() + 48 * hour)));
+        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.HEATHROW, new Date(timeNow.getTimeInMillis() + 60 * hour)));
+        entityManager.persist(new Flight(911, SampleCarriers.AA, SampleAirports.DENVER, SampleAirports.NEW_YORK_JFK, new Date(timeNow.getTimeInMillis() + 36 * hour)));
+        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI, SampleAirports.GATWICK, new Date(timeNow.getTimeInMillis() + 32 * hour)));
     }
 
     private void loadSampleVoyages() {
