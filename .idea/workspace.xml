@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0b58f9-43b8-4273-95bc-5e8442dd05b9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml" />
     </list>
@@ -62,16 +63,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding>
-                <element signature="e#4443#4444#0" expanded="true" />
-                <element signature="e#4507#4508#0" expanded="true" />
-                <element signature="e#4553#4554#0" expanded="true" />
-                <element signature="e#4625#4626#0" expanded="true" />
+                <element signature="e#4764#4765#0" expanded="true" />
+                <element signature="e#4828#4829#0" expanded="true" />
+                <element signature="e#4874#4875#0" expanded="true" />
+                <element signature="e#4946#4947#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +81,8 @@
       <file leaf-file-name="SampleDataGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="202" column="70" lean-forward="false" selection-start-line="202" selection-start-column="70" selection-end-line="202" selection-end-column="70" />
+            <state relative-caret-position="313">
+              <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -97,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listFlights.xhtml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="listFlights.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="415">
+              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -182,9 +183,9 @@
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/FlightRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaFlightRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/SpecialAirService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
       </list>
     </option>
   </component>
@@ -939,12 +940,12 @@
       <workItem from="1495028144305" duration="8086000" />
       <workItem from="1495044347923" duration="2150000" />
       <workItem from="1495047641457" duration="15166000" />
-      <workItem from="1495125664666" duration="8858000" />
+      <workItem from="1495125664666" duration="9555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40122000" />
+    <option name="totallyTimeSpent" value="40819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1411,14 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="202" column="70" lean-forward="false" selection-start-line="202" selection-start-column="70" selection-end-line="202" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaFlightRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1427,24 +1420,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="313">
+          <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="e#4443#4444#0" expanded="true" />
-            <element signature="e#4507#4508#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4625#4626#0" expanded="true" />
+            <element signature="e#4764#4765#0" expanded="true" />
+            <element signature="e#4828#4829#0" expanded="true" />
+            <element signature="e#4874#4875#0" expanded="true" />
+            <element signature="e#4946#4947#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/listFlights.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
