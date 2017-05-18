@@ -1,17 +1,14 @@
-package net.java.cargotracker.domain.model.cargo;
+package net.java.cargotracker.domain.model.flight;
 
 import java.util.List;
 
-public interface CargoRepository {
+public interface FlightRepo {
 
-    Cargo find(TrackingId trackingId);
+    Flight find(int number);
 
-    List<Cargo> findAll();
+    List<Flight> findAll();
 
-    void store(Cargo cargo);
-
-    TrackingId nextTrackingId();
+    void add(Flight flight);
     
-    List<TrackingId> getAllTrackingId();
-    
+    List<Integer> getAllFlightIds();
 }

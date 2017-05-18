@@ -67,13 +67,13 @@ import org.apache.commons.lang3.Validate;
  */
 
 @Entity
-/*@NamedQueries({
-    @NamedQuery(name = "Cargo.findAll",
-            query = "Select c from Cargo c"),
-    @NamedQuery(name = "Cargo.findByTrackingId",
-            query = "Select c from Cargo c where c.trackingId = :trackingId"),
-    @NamedQuery(name = "Cargo.getAllTrackingId",
-            query = "Select c.trackingId from Cargo c") }) */
+@NamedQueries({
+    @NamedQuery(name = "Flight.findAll",
+            query = "Select f from Flight f"),
+    @NamedQuery(name = "Cargo.findByFlightNumber",
+            query = "Select f from Flight f where f.number = :number"),
+    @NamedQuery(name = "Cargo.getAllFlightNumbers",
+            query = "Select f.number from Flight f") })
 public class Flight implements Serializable {
 
     private static final long serialVersionUID = 1L;

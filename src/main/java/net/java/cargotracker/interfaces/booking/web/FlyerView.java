@@ -29,10 +29,9 @@ public class FlyerView implements Serializable{
         // Initialize the dashboard model
         this.model = new DefaultDashboardModel();
         DashboardColumn mainColumn = new DefaultDashboardColumn();
- 
+
+        mainColumn.addWidget("Flights");
         mainColumn.addWidget("Routed");
-        mainColumn.addWidget("NotRouted");
-        mainColumn.addWidget("Claimed");
         mainColumn.addWidget("All");
         mainColumn.addWidget("Airports");
  

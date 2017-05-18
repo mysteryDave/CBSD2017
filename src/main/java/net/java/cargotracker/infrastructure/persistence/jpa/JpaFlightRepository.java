@@ -1,34 +1,34 @@
 package net.java.cargotracker.infrastructure.persistence.jpa;
 
+
+import net.java.cargotracker.domain.model.flight.Flight;
+import net.java.cargotracker.domain.model.flight.FlightRepo;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.enterprise.context.ApplicationScoped;
-import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
-import javax.persistence.PersistenceContext;
-import net.java.cargotracker.domain.model.cargo.Cargo;
-import net.java.cargotracker.domain.model.cargo.CargoRepository;
-import net.java.cargotracker.domain.model.cargo.Leg;
-import net.java.cargotracker.domain.model.cargo.TrackingId;
 
 @ApplicationScoped
-public class JpaCargoRepository implements CargoRepository, Serializable {
+public class JpaFlightRepository implements FlightRepo, Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private static final Logger logger = Logger.getLogger(
-            JpaCargoRepository.class.getName());
+            JpaFlightRepository.class.getName());
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public Cargo find(TrackingId trackingId) {
-        Cargo cargo;
-
+    public Flight find(int number) {
+    /*
+        Flight flight;
         try {
             cargo = entityManager.createNamedQuery("Cargo.findByTrackingId",
                     Cargo.class)
@@ -40,37 +40,25 @@ public class JpaCargoRepository implements CargoRepository, Serializable {
         }
 
         return cargo;
+    */ return null;
     }
 
     @Override
-    public void store(Cargo cargo) {
-        // TODO See why cascade is not working correctly for legs.
-        for (Leg leg : cargo.getItinerary().getLegs()) {
-            entityManager.persist(leg);
-        }
-
-        entityManager.persist(cargo);
-    }
+    public void add(Flight flight) { entityManager.persist(flight); }
 
     @Override
-    public TrackingId nextTrackingId() {
-        String random = UUID.randomUUID().toString().toUpperCase();
-
-        return new TrackingId(random.substring(0, random.indexOf("-")));
-    }
-
-    @Override
-    public List<Cargo> findAll() {
-        return entityManager.createNamedQuery("Cargo.findAll", Cargo.class)
+    public List<Flight> findAll() {
+        return entityManager.createNamedQuery("Flight.findAll", Flight.class)
                 .getResultList();
     }
 
     @Override
-    public List<TrackingId> getAllTrackingId() {
+    public List<Integer> getAllFlightIds() {
         //Query query = entityManager.createQuery("SELECT id FROM Cargo id");
         //List<TrackingId> listId = query.getResultList();
 
-        List<TrackingId> listId; // = query.getResultList();
+        List<Integer> listId = null; // = query.getResultList();
+        /*
         try {
             listId = entityManager.createNamedQuery("Cargo.getAllTrackingId",
                     TrackingId.class)
@@ -78,7 +66,7 @@ public class JpaCargoRepository implements CargoRepository, Serializable {
         } catch (NoResultException e) {
             logger.log(Level.FINE, "Unable to get all tracking ID", e);
             listId = null;
-        }
+        }*/
 
         return listId;
     }

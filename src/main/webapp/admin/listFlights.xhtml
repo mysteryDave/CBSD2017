@@ -4,16 +4,11 @@
      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
      xmlns:p="http://primefaces.org/ui">
     
-    <p:dataTable var="port" value="#{listFlights.allPorts}" style="text-align: center;">
+    <p:dataTable var="flight" value="#{listFlights.allFlights}" style="text-align: center;">
 
-        <p:column headerText="Name">
-            <h:outputText value="#{port.name}  " /> -
-            <h:outputText value="#{port.code}" style="color: #999999;font-size:.8em;"/>
-        </p:column>
-
-        <p:column headerText="Id">
-            <h:outputText value="#{port.code}  " /> -
-            <h:outputText value="#{port.name}" style="color: #999999;font-size:.8em;"/>
+        <p:column headerText="Number">
+            <h:outputText value="#{flight.number}  " /> -
+            <h:outputText value="#{flight.number}" style="color: #999999;font-size:.8em;"/>
         </p:column>
 
     </p:dataTable>
