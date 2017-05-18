@@ -22,6 +22,7 @@ import net.java.cargotracker.domain.model.cargo.RouteSpecification;
 import net.java.cargotracker.domain.model.cargo.TrackingId;
 import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.carrier.SampleCarriers;
+import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.domain.model.handling.CannotCreateHandlingEventException;
 import net.java.cargotracker.domain.model.handling.HandlingEvent;
 import net.java.cargotracker.domain.model.handling.HandlingEventFactory;
@@ -57,6 +58,7 @@ public class SampleDataGenerator {
         loadSampleCargos();
         loadAirports();
         loadCarriers();
+        loadFlights();
     }
 
     private void unLoadAll() {
@@ -191,6 +193,15 @@ public class SampleDataGenerator {
         entityManager.persist(SampleCarriers.DELTA);
         entityManager.persist(SampleCarriers.SOUTH_CHINA);
         entityManager.persist(SampleCarriers.AIR_CHINA);
+    }
+
+    private void loadFlights() {
+        logger.info("Loading sample flights.");
+
+        entityManager.persist(new Flight(101));
+        entityManager.persist(new Flight(999));
+        entityManager.persist(new Flight(299));
+        entityManager.persist(new Flight(911));
     }
 
     private void loadSampleVoyages() {

@@ -40,7 +40,15 @@
 package net.java.cargotracker.domain.model.flight;
 
 import java.io.Serializable;
-import javax.persistence.*;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.validation.constraints.NotNull;
 
 import net.java.cargotracker.domain.model.cargo.*;
 import net.java.cargotracker.domain.model.handling.HandlingEvent;
@@ -50,33 +58,42 @@ import net.java.cargotracker.domain.shared.DomainObjectUtils;
 import org.apache.commons.lang3.Validate;
 
 /**
- * A flight. This is the central class.
- *
- * A flight is identified by a unique 3 digit numeric tracking id.
- * It should always has a departure airport and date/time.
- * It should always have an arrival airport and date/time.
+ * A Flight. This is the central class in the domain model.
+ * Each has a unique code in range 000 - 999.
+ * Each has a carrier and an aircraft (to inject maximum capacity.)
+ * Each has a departure airport and a destination airport.
+ * Each has a scheduled departure time and scheduled arrival time.
  *
  */
+
 @Entity
+/*@NamedQueries({
+    @NamedQuery(name = "Cargo.findAll",
+            query = "Select c from Cargo c"),
+    @NamedQuery(name = "Cargo.findByTrackingId",
+            query = "Select c from Cargo c where c.trackingId = :trackingId"),
+    @NamedQuery(name = "Cargo.getAllTrackingId",
+            query = "Select c.trackingId from Cargo c") }) */
 public class Flight implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    // Auto-generated key
+    // Auto-generated surrogate key
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(name = "flight_number", unique = true, updatable = false)
-    private short number;
+    @NotNull
+    private int number;
 
-    public Flight() {} // Nothing to initialize.
+    public Flight() {}
 
-    public Flight(short number) {
-        Validate.notNull(number, "Flight Number Required");
+    public Flight(int number) {
+        Validate.notNull(number, "Tracking ID is required");
+
         this.number = number;
     }
 
-    public short getNumber() {
+    public int getNumber() {
         return number;
     }
 
@@ -87,23 +104,20 @@ public class Flight implements Serializable {
      */
     @Override
     public boolean equals(Object object) {
-        if (this == object) {
-            return true;
-        }
+        if (this == object) return true;
         if (object == null || getClass() != object.getClass()) {
             return false;
         }
-
         Flight other = (Flight) object;
         return sameIdentityAs(other);
     }
 
     private boolean sameIdentityAs(Flight other) {
-        return other != null && number == other.number;
+        return (other != null && number == other.number);
     }
 
     @Override
     public String toString() {
-        return String.format("%03", number);
+        return String.format("%d03", number);
     }
 }

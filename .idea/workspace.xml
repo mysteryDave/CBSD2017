@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0b58f9-43b8-4273-95bc-5e8442dd05b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/airport/SampleAirports.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/carrier/SampleCarriers.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker.war" afterPath="$PROJECT_DIR$/target/cargo-tracker.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" afterPath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/flight/Flight.class" afterPath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/flight/Flight.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" afterPath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/flight/Flight.class" afterPath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/flight/Flight.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,17 +81,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleDataGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SampleDataGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+            <state relative-caret-position="188">
+              <caret line="203" column="47" lean-forward="false" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleCarriers.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+              <folding>
+                <element signature="e#4309#4310#0" expanded="true" />
+                <element signature="e#4373#4374#0" expanded="true" />
+                <element signature="e#4419#4420#0" expanded="true" />
+                <element signature="e#4471#4472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleCarriers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/carrier/SampleCarriers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="617">
@@ -139,24 +154,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlyerView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/FlyerView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#538#539#0" expanded="false" />
-                <element signature="e#565#566#0" expanded="false" />
-                <element signature="e#1047#1048#0" expanded="false" />
-                <element signature="e#1075#1076#0" expanded="false" />
-                <element signature="e#1126#1127#0" expanded="false" />
-                <element signature="e#1160#1161#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -190,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/common/admin.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/DashboardView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/FlyerView.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/customer.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/admin/listAirports.xhtml" />
@@ -210,8 +206,9 @@
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/SpecialAirService.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/airport/SampleAirports.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/carrier/SampleAirports.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/carrier/SampleCarriers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java" />
       </list>
     </option>
   </component>
@@ -516,49 +513,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="location" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineTravele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineTravele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cargotracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carrier" />
+              <option name="myItemId" value="flight" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -576,11 +531,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.java.cargotracker.domain.model.flight" />
       <recent name="net.java.cargotracker.domain.model.carrier" />
       <recent name="net.java.cargotracker.domain.model.airport" />
       <recent name="net.java.cargotracker.interfaces.booking.web" />
       <recent name="net.java.cargotracker.infrastructure.persistence.jpa" />
-      <recent name="net.java.cargotracker.interfaces.booking.facade.internal" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DT\Documents\MSc\CBSD\OnlineTravele\src\main\webapp\admin" />
@@ -1150,16 +1105,16 @@
       <workItem from="1495028144305" duration="8086000" />
       <workItem from="1495044347923" duration="2150000" />
       <workItem from="1495047641457" duration="15166000" />
-      <workItem from="1495125664666" duration="2890000" />
+      <workItem from="1495125664666" duration="5586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34154000" />
+    <option name="totallyTimeSpent" value="36850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1356,21 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="71" column="48" lean-forward="false" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
-          <folding>
-            <element signature="e#3166#3167#0" expanded="false" />
-            <element signature="e#3195#3196#0" expanded="false" />
-            <element signature="e#3691#3692#0" expanded="false" />
-            <element signature="e#3753#3754#0" expanded="false" />
-            <element signature="e#3799#3800#0" expanded="false" />
-            <element signature="e#3850#3851#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1659,18 +1599,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/carrier/SampleCarriers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+          <folding>
+            <element signature="e#4309#4310#0" expanded="true" />
+            <element signature="e#4373#4374#0" expanded="true" />
+            <element signature="e#4419#4420#0" expanded="true" />
+            <element signature="e#4471#4472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/SampleDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="203" column="47" lean-forward="false" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
           <folding />
         </state>
       </provider>
