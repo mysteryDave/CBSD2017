@@ -7,6 +7,8 @@ import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.ArrayList;
@@ -48,5 +50,10 @@ public class ListFlights {
         allPorts = airService.listAirports();
         allLines = airService.listCarriers();
     }
+
+    public void cancelFlight(int number) {
+        airService.cxlFlight(number);
+    }
+
 
 }

@@ -4,15 +4,22 @@
      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
      xmlns:p="http://primefaces.org/ui">
     
-    <p:dataTable var="flight" value="#{listFlights.allFlights}" style="text-align: center;">
+    <p:dataTable var="flight" value="#{listFlights.allFlights}" style="text-align: center;" id="flights_table">
+        <p:column headerText="# . Carrier">
+            <h:form>
+                <p:commandButton icon="ui-icon-close" actionListener="#{listFlights.cancelFlight(flight.number)}">
+                    <p:confirm header="#{flight.number}" message="CANCEL FLIGHT?" icon="ui-icon-alert" />
+                </p:commandButton>
 
-        <p:column headerText="Number">
-            <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
-        </p:column>
-
-        <p:column headerText="Carrier">
-            <h:outputText value="#{flight.carrier.name}  " /><br/>
-            <h:outputText value="#{flight.carrier.code}" style="color: #999999;font-size:.8em;"/>
+                <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                    <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                    <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                </p:confirmDialog>
+                 -
+                <h:outputText value="#{flight.carrier.code}"/>
+                <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
+                <br/><h:outputText value="#{flight.carrier.name}" style="color: #999999;font-size:.8em;"/>
+            </h:form>
         </p:column>
 
         <p:column headerText="Departs">

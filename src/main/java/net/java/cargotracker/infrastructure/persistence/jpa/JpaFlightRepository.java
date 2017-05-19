@@ -4,10 +4,13 @@ package net.java.cargotracker.infrastructure.persistence.jpa;
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.domain.model.flight.FlightRepo;
 
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.context.ApplicationScoped;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
@@ -40,9 +43,11 @@ public class JpaFlightRepository implements FlightRepo, Serializable {
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void add(Flight flight) { entityManager.persist(flight); }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void cancel(Flight flight) { entityManager.remove(flight); }
 
     @Override
