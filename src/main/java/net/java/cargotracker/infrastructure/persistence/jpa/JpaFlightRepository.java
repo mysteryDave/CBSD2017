@@ -27,24 +27,23 @@ public class JpaFlightRepository implements FlightRepo, Serializable {
 
     @Override
     public Flight find(int number) {
-    /*
         Flight flight;
         try {
-            cargo = entityManager.createNamedQuery("Cargo.findByTrackingId",
-                    Cargo.class)
-                    .setParameter("trackingId", trackingId)
+            flight = entityManager.createNamedQuery("Flight.findByFlightNumber", Flight.class)
+                    .setParameter("number", number)
                     .getSingleResult();
         } catch (NoResultException e) {
-            logger.log(Level.FINE, "Find called on non-existant tracking ID.", e);
-            cargo = null;
+            logger.log(Level.FINE, "JPAflightRepo.Find called on non-existant flight number.", e);
+            flight = null;
         }
-
-        return cargo;
-    */ return null;
+        return flight;
     }
 
     @Override
     public void add(Flight flight) { entityManager.persist(flight); }
+
+    @Override
+    public void cancel(Flight flight) { entityManager.remove(flight); }
 
     @Override
     public List<Flight> findAll() {

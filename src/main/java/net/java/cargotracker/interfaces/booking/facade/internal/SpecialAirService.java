@@ -8,6 +8,8 @@ import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.domain.model.flight.FlightRepo;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
 
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.Serializable;
@@ -28,22 +30,27 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
     private FlightRepo flightRepo;
 
     @Override
-    public void addFlight(short flightNo, Airport from, Date departs, Airport to, Date arrives) {
+    public void addFlight(int flightNo, Airport from, Date departs, Airport to, Date arrives) {
 
     }
 
     @Override
-    public boolean cxlFlight(short flightNo) {
-        return false;
+    public boolean cxlFlight(int flightNo) {
+        Flight cancelFlight = flightRepo.find(flightNo);
+        if (cancelFlight == null) return false;
+        else {
+            flightRepo.cancel(cancelFlight);
+            return true;
+        }
     }
 
     @Override
-    public void bookSeat(short flightNo, String flyer, boolean isBusinessClass) {
+    public void bookSeat(int flightNo, String flyer, boolean isBusinessClass) {
 
     }
 
     @Override
-    public boolean cxlBook(short flightNo, String flyer, boolean isBusinessClass) {
+    public boolean cxlBook(int flightNo, String flyer, boolean isBusinessClass) {
         return false;
     }
 

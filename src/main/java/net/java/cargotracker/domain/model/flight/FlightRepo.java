@@ -9,6 +9,8 @@ public interface FlightRepo {
     List<Flight> findAll();
 
     void add(Flight flight);
+
+    void cancel(Flight flight);
     
     List<Integer> getAllFlightIds();
 }

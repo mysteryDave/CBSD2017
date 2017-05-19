@@ -46,12 +46,8 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 import net.java.cargotracker.domain.model.airport.Airport;
-import net.java.cargotracker.domain.model.cargo.*;
 import net.java.cargotracker.domain.model.carrier.Carrier;
-import net.java.cargotracker.domain.model.handling.HandlingEvent;
-import net.java.cargotracker.domain.model.handling.HandlingHistory;
-import net.java.cargotracker.domain.model.location.Location;
-import net.java.cargotracker.domain.shared.DomainObjectUtils;
+
 import org.apache.commons.lang3.Validate;
 
 /**
@@ -67,9 +63,9 @@ import org.apache.commons.lang3.Validate;
 @NamedQueries({
     @NamedQuery(name = "Flight.findAll",
             query = "Select f from Flight f"),
-    @NamedQuery(name = "Cargo.findByFlightNumber",
+    @NamedQuery(name = "Flight.findByFlightNumber",
             query = "Select f from Flight f where f.number = :number"),
-    @NamedQuery(name = "Cargo.getAllFlightNumbers",
+    @NamedQuery(name = "Flight.getAllFlightNumbers",
             query = "Select f.number from Flight f") })
 public class Flight implements Serializable {
 
@@ -92,13 +88,17 @@ public class Flight implements Serializable {
     @JoinColumn(name = "carrier_id", updatable = false)
     private Carrier carrier;
     @NotNull
+    @Temporal(TemporalType.DATE)
+    @Column(name = "depart_time", updatable = false)
+    private Date takeOff;
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "departs_id", updatable = false)
     private Airport departs;
     @NotNull
     @Temporal(TemporalType.DATE)
-    @Column(name = "depart_time", updatable = false)
-    private Date takeOff;
+    @Column(name = "arrive_time", updatable = false)
+    private Date landing;
     @NotNull
     @ManyToOne
     @JoinColumn(name = "arrives_id", updatable = false)
@@ -106,18 +106,21 @@ public class Flight implements Serializable {
 
     public Flight() {}
 
-    public Flight(int number, Carrier airline, Airport from, Airport to, Date leaves) {
-        Validate.notNull(number, "Tracking ID is required");
+    public Flight(int number, Carrier airline, Airport from, Airport to, Date leaves, Date lands) {
+        Validate.notNull(number, "Tracking ID is required.");
+        Validate.inclusiveBetween(0,999,number,"Flight number must be positive and below 1,000.");
         Validate.notNull(airline, "Flight must be run by an airline.");
         Validate.notNull(from, "Flight must take off somewhere.");
         Validate.notNull(to, "Flight must land somewhere.");
         Validate.notNull(leaves, "Take off time must be scheduled.");
+        Validate.notNull(lands, "Landing time must be scheduled.");
 
         this.number = number;
         this.carrier = airline;
         this.departs = from;
         this.takeOff = leaves;
         this.arrives = to;
+        this.landing = lands;
     }
 
     public int getNumber() {
@@ -134,9 +137,16 @@ public class Flight implements Serializable {
 
     public Date getTakeOff() { return takeOff; }
 
+    public Date getLanding() { return landing; }
+
+    //These are about how dates are displayed to interface so perhaps should be moved elsewhere.
     public String getTakeOffTime() { return TIME_FORMAT.format(getTakeOff()); }
 
     public String getTakeOffDate() { return DATE_FORMAT.format(getTakeOff()); }
+
+    public String getLandingTime() { return TIME_FORMAT.format(getLanding()); }
+
+    public String getLandingDate() { return DATE_FORMAT.format(getLanding()); }
 
     /**
      * @param object to compare
