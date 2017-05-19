@@ -201,13 +201,15 @@ public class SampleDataGenerator {
         logger.info("Loading sample flights.");
 
         Calendar timeNow = new GregorianCalendar();
-        Date today = timeNow.getTime();
+        timeNow.set(Calendar.MILLISECOND, 0);
+        timeNow.set(Calendar.SECOND, 0);
+        timeNow.set(Calendar.MINUTE, 0);
 
         entityManager.persist(new Flight(101, SampleCarriers.BA, SampleAirports.HEATHROW, SampleAirports.EDINBURGH, new Date(timeNow.getTimeInMillis() + 24 * hour)));
-        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK, SampleAirports.PARIS_CDG, new Date(timeNow.getTimeInMillis() + 48 * hour)));
-        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.HEATHROW, new Date(timeNow.getTimeInMillis() + 60 * hour)));
+        entityManager.persist(new Flight(999, SampleCarriers.BA, SampleAirports.GATWICK, SampleAirports.PARIS_CDG, new Date(timeNow.getTimeInMillis() + 28.5 * hour)));
+        entityManager.persist(new Flight(299, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.HEATHROW, new Date(timeNow.getTimeInMillis() + 40 * hour)));
         entityManager.persist(new Flight(911, SampleCarriers.AA, SampleAirports.DENVER, SampleAirports.NEW_YORK_JFK, new Date(timeNow.getTimeInMillis() + 36 * hour)));
-        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI, SampleAirports.GATWICK, new Date(timeNow.getTimeInMillis() + 32 * hour)));
+        entityManager.persist(new Flight(8, SampleCarriers.EMIRATES, SampleAirports.DUBAI, SampleAirports.GATWICK, new Date(timeNow.getTimeInMillis() + 32.5 * hour)));
     }
 
     private void loadSampleVoyages() {

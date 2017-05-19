@@ -40,6 +40,7 @@
 package net.java.cargotracker.domain.model.flight;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -71,6 +72,11 @@ import org.apache.commons.lang3.Validate;
     @NamedQuery(name = "Cargo.getAllFlightNumbers",
             query = "Select f.number from Flight f") })
 public class Flight implements Serializable {
+
+    private static final SimpleDateFormat DATE_FORMAT
+            = new SimpleDateFormat("dd/MM/yyyy");
+    private static final SimpleDateFormat TIME_FORMAT
+            = new SimpleDateFormat("hh:mm a z");
 
     private static final long serialVersionUID = 1L;
     // Auto-generated surrogate key
@@ -128,6 +134,10 @@ public class Flight implements Serializable {
 
     public Date getTakeOff() { return takeOff; }
 
+    public String getTakeOffTime() { return TIME_FORMAT.format(getTakeOff()); }
+
+    public String getTakeOffDate() { return DATE_FORMAT.format(getTakeOff()); }
+
     /**
      * @param object to compare
      * @return True if they have the same identity
@@ -149,7 +159,7 @@ public class Flight implements Serializable {
 
     @Override
     public String toString() {
-        return carrier.getCode() + String.format("%d03", number) + " " +
+        return carrier.getCode() + String.format("%03d", number) + " " +
                 departs.getCode() + "->" + arrives.getCode();
     }
 }

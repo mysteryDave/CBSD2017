@@ -7,22 +7,26 @@
     <p:dataTable var="flight" value="#{listFlights.allFlights}" style="text-align: center;">
 
         <p:column headerText="Number">
-            <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText> -
-            <h:outputText style="color: #999999;font-size:.8em;" value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
+            <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
         </p:column>
 
         <p:column headerText="Carrier">
-            <h:outputText value="#{flight.carrier.name}  " /> -
+            <h:outputText value="#{flight.carrier.name}  " /><br/>
             <h:outputText value="#{flight.carrier.code}" style="color: #999999;font-size:.8em;"/>
         </p:column>
 
+        <p:column headerText="Leaving">
+            <h:outputText value="#{flight.takeOffTime}" /><br/>
+            <h:outputText value="#{flight.takeOffDate}" style="color: #999999;font-size:.8em;"/>
+        </p:column>
+
         <p:column headerText="From">
-            <h:outputText value="#{flight.departs.name}  " /> -
+            <h:outputText value="#{flight.departs.name}  " /><br/>
             <h:outputText value="#{flight.departs.code}" style="color: #999999;font-size:.8em;"/>
         </p:column>
 
         <p:column headerText="To">
-            <h:outputText value="#{flight.arrives.name}  " /> -
+            <h:outputText value="#{flight.arrives.name}  " /><br/>
             <h:outputText value="#{flight.arrives.code}" style="color: #999999;font-size:.8em;"/>
         </p:column>
 
