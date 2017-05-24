@@ -10,10 +10,6 @@
             <p:commandLink action="#{cancelFlightDialog.showDialog(flight.number)}" style="text-decoration: none;" id="toUpdate">
                 <h:outputText value="#{flight.carrier.code}"/>
                 <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
-
-                <i class="fa fa-close" style="color: #999999;"></i>
-                <p:ajax event="dialogReturn" listener="#{cancelFlightDialog.handleReturn}" update="flights_table"/>
-
                 <br/><h:outputText value="#{flight.carrier.name}" style="color: #999999;font-size:.8em;"/>
             </p:commandLink>
         </p:column>

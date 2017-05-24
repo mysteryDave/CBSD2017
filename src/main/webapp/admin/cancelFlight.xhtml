@@ -45,13 +45,13 @@
                     </tr>
 
 
-                    <tr><td><br/><br/></td></tr> <!-- TODO: bottom align instead of this! -->
+                    <tr><td>
+                        <p:outputLabel value="Confirm Cancel?" />
+                    </td><td><br/><br/></td></tr> <!-- TODO: bottom align instead of this! -->
                     
                     <tr>
                         <td>
-                            <p:commandButton value="Yes"
-                                             action="#{cancelFlight.cancelFlight()}"
-                                             oncomplete="#{cancelFlightDialog.close()}"/>
+                            <p:commandButton value="Yes" action="#{cancelFlight.cancelFlight()}"/>
                         </td>
                         <td>
                             <p:commandButton value="No" action="#{cancelFlightDialog.close()}" />

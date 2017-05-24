@@ -46,8 +46,8 @@ public class CancelFlight implements Serializable {
     }
 
     public void cancelFlight() {
-        airService.cxlFlight(flightNo);
-        RequestContext.getCurrentInstance().closeDialog("DONE");
+        airService.cxlFlight(flight.getNumber());
+        RequestContext.getCurrentInstance().closeDialog("");
     }
 
     public void load() {

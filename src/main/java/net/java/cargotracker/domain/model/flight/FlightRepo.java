@@ -10,7 +10,7 @@ public interface FlightRepo {
 
     void add(Flight flight);
 
-    void cancel(Flight flight);
+    void cancel(int flightNo);
     
     List<Integer> getAllFlightIds();
 }

@@ -55,5 +55,4 @@ public class ListFlights {
         airService.cxlFlight(number);
     }
 
-
 }

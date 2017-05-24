@@ -40,12 +40,9 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
 
     @Override
     public boolean cxlFlight(int flightNo) {
-        Flight cancelFlight = flightRepo.find(flightNo);
-        if (cancelFlight == null) return false;
-        else {
-            flightRepo.cancel(cancelFlight);
-            return true;
-        }
+        Flight cxlFlight = flightRepo.find(flightNo);
+        flightRepo.cancel(flightNo);
+        return (cxlFlight != null);
     }
 
     @Override

@@ -47,8 +47,12 @@ public class JpaFlightRepository implements FlightRepo, Serializable {
     public void add(Flight flight) { entityManager.persist(flight); }
 
     @Override
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public void cancel(Flight flight) { entityManager.remove(flight); }
+    @Transactional
+    public void cancel(int flightNo) {
+        Flight removeFlight = find(flightNo);
+        logger.fine("CXL FLIGHT RQST: " + removeFlight);
+        entityManager.remove(entityManager.contains(removeFlight) ? removeFlight : entityManager.merge(removeFlight));
+    }
 
     @Override
     public List<Flight> findAll() {
@@ -58,21 +62,8 @@ public class JpaFlightRepository implements FlightRepo, Serializable {
 
     @Override
     public List<Integer> getAllFlightIds() {
-        //Query query = entityManager.createQuery("SELECT id FROM Cargo id");
-        //List<TrackingId> listId = query.getResultList();
-
-        List<Integer> listId = null; // = query.getResultList();
-        /*
-        try {
-            listId = entityManager.createNamedQuery("Cargo.getAllTrackingId",
-                    TrackingId.class)
-                    .getResultList();
-        } catch (NoResultException e) {
-            logger.log(Level.FINE, "Unable to get all tracking ID", e);
-            listId = null;
-        }*/
-
-        return listId;
+        return entityManager.createNamedQuery("Flight.getAllFlightNumbers")
+                .getResultList();
     }
 
 }
