@@ -34,6 +34,10 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
 
     }
 
+    public Flight getFlight(int flightNo) {
+        return flightRepo.find(flightNo);
+    }
+
     @Override
     public boolean cxlFlight(int flightNo) {
         Flight cancelFlight = flightRepo.find(flightNo);
@@ -46,7 +50,7 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
 
     @Override
     public void bookSeat(int flightNo, String flyer, boolean isBusinessClass) {
-
+      //TODO
     }
 
     @Override

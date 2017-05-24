@@ -15,6 +15,8 @@ public interface AirServiceFacade {
 
     void addFlight(int flightNo, Airport from, Date departs, Airport to, Date arrives);
 
+    Flight getFlight(int flightNo);
+
     boolean cxlFlight(int flightNo);
 
     void bookSeat(int flightNo, String flyer, boolean isBusinessClass);

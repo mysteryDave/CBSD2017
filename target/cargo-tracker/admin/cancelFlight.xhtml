@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    <h:head>
+        <title>
+            Cancel #{cancelFlight.flight.longCode} #{cancelFlight.flight.takeOffDate}
+        </title>
+        <h:outputStylesheet name="dd.css"/>
+    </h:head>
+
+    <h:body>
+        <f:metadata>
+            <f:viewParam name="flightNo"
+                         value="#{cancelFlight.flightNo}" />
+            <f:viewAction action="#{cancelFlight.load}" />
+        </f:metadata>
+
+        <h:form>
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td><p:outputLabel value="#{cancelFlight.flight.carrier.name}" /></td>
+                        <td><p:outputLabel value="flight" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><p:outputLabel value="from" /></td>
+                        <td><p:outputLabel value="#{cancelFlight.flight.departs.name}" /></td>
+                    </tr>
+                    <tr>
+                        <td><p:outputLabel value="#{cancelFlight.flight.departs.code}" /></td>
+                        <td><p:outputLabel value="#{cancelFlight.flight.takeOffTime}" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><p:outputLabel value="to" /></td>
+                        <td><p:outputLabel value="#{cancelFlight.flight.arrives.name}" /></td>
+                    </tr>
+                    <tr>
+                        <td><p:outputLabel value="#{cancelFlight.flight.arrives.code}" /></td>
+                        <td><p:outputLabel value="#{cancelFlight.flight.landingTime}" /></td>
+                    </tr>
+
+
+                    <tr><td><br/><br/></td></tr> <!-- TODO: bottom align instead of this! -->
+                    
+                    <tr>
+                        <td>
+                            <p:commandButton value="Yes"
+                                             action="#{cancelFlight.cancelFlight()}"
+                                             oncomplete="#{cancelFlightDialog.close()}"/>
+                        </td>
+                        <td>
+                            <p:commandButton value="No" action="#{cancelFlightDialog.close()}" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </h:form>
+       
+    </h:body>
+</html>

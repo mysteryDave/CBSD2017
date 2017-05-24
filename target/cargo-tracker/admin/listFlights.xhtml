@@ -1,25 +1,21 @@
-<div id="id_list_compl_cargoes" xmlns="http://www.w3.org/1999/xhtml"
+<div id="list_flights" xmlns="http://www.w3.org/1999/xhtml"
      xmlns:h="http://xmlns.jcp.org/jsf/html"
      xmlns:f="http://xmlns.jcp.org/jsf/core"
      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
      xmlns:p="http://primefaces.org/ui">
     
     <p:dataTable var="flight" value="#{listFlights.allFlights}" style="text-align: center;" id="flights_table">
-        <p:column headerText="# . Carrier">
-            <h:form>
-                <p:commandButton icon="ui-icon-close" actionListener="#{listFlights.cancelFlight(flight.number)}">
-                    <p:confirm header="#{flight.number}" message="CANCEL FLIGHT?" icon="ui-icon-alert" />
-                </p:commandButton>
 
-                <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-                    <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-                    <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-                </p:confirmDialog>
-                 -
+        <p:column headerText="Flight">
+            <p:commandLink action="#{cancelFlightDialog.showDialog(flight.number)}" style="text-decoration: none;" id="toUpdate">
                 <h:outputText value="#{flight.carrier.code}"/>
                 <h:outputText value="#{flight.number}"><f:convertNumber minIntegerDigits="3"/></h:outputText>
+
+                <i class="fa fa-close" style="color: #999999;"></i>
+                <p:ajax event="dialogReturn" listener="#{cancelFlightDialog.handleReturn}" update="flights_table"/>
+
                 <br/><h:outputText value="#{flight.carrier.name}" style="color: #999999;font-size:.8em;"/>
-            </h:form>
+            </p:commandLink>
         </p:column>
 
         <p:column headerText="Departs">
@@ -43,5 +39,5 @@
         </p:column>
 
     </p:dataTable>
-    
+
 </div>

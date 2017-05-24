@@ -167,6 +167,10 @@ public class Flight implements Serializable {
         return (other != null && number == other.number);
     }
 
+    public String getLongCode() {
+        return carrier.getCode() + String.format("%03d", number);
+    }
+
     @Override
     public String toString() {
         return carrier.getCode() + String.format("%03d", number) + " " +
