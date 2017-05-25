@@ -17,23 +17,38 @@
                 <tbody>
 
                     <tr>
-                        <td><p:outputLabel value="carrier" /></td>
+                        <td>
+                            <p:outputLabel value="Airline" for="carrierCode" />
+                            <p:autoComplete id="carrierCode" dropdown="true" value="#{addFlight.airlineCode}" required="true" forceSelection="true" completeMethod="#{addFlight.autoCarrierCode}" />
+                        </td>
+                        <td>
+                            <p:outputLabel value="Date" for="flyDate"  />
+                            <p:calendar id="flyDate" value="#{addFlight.flyDate}" showOn="button" />
+                        </td>
                     </tr>
 
                     <tr>
-                        <td><p:outputLabel value="from" /></td>
-                    </tr>
-                    <tr>
-                        <td><p:outputLabel value="leaving" /></td>
+                        <td>
+                            <p:outputLabel for="leaveTime" value="departs" />
+                            <p:calendar id="leaveTime" value="#{addFlight.startTime}" pattern="HH:mm" timeOnly="true"  />
+
+                        </td>
+                        <td>
+                            <p:outputLabel value="from" for="fromPort"/>
+                            <p:autoComplete id="fromPort" dropdown="true" value="#{addFlight.fromPort}" required="true" forceSelection="true" completeMethod="#{addFlight.autoPortCode}" />
+                        </td>
                     </tr>
 
                     <tr>
-                        <td><p:outputLabel value="to" /></td>
-                        <</tr>
-                    <tr>
-                        <td><p:outputLabel value="arriving" /></td>
+                        <td>
+                            <p:outputLabel for="arriveTime" value="arrive" />
+                            <p:calendar id="arriveTime" value="#{addFlight.endTime}" pattern="HH:mm" timeOnly="true"  />
+                        </td>
+                        <td>
+                            <p:outputLabel value="to" for="toPort"/>
+                            <p:autoComplete id="toPort" dropdown="true" value="#{addFlight.toPort}" required="true" forceSelection="true" completeMethod="#{addFlight.autoPortCode}" />
+                        </td>
                     </tr>
-
 
                     <tr><td>
                         <p:outputLabel value="Add Flight?" />
