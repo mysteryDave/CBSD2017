@@ -11,23 +11,9 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import net.java.cargotracker.domain.model.airport.Airport;
 import net.java.cargotracker.domain.model.airport.SampleAirports;
-import net.java.cargotracker.domain.model.cargo.Cargo;
-import net.java.cargotracker.domain.model.cargo.Itinerary;
-import net.java.cargotracker.domain.model.cargo.Leg;
-import net.java.cargotracker.domain.model.cargo.RouteSpecification;
-import net.java.cargotracker.domain.model.cargo.TrackingId;
-import net.java.cargotracker.domain.model.carrier.Carrier;
 import net.java.cargotracker.domain.model.carrier.SampleCarriers;
 import net.java.cargotracker.domain.model.flight.Flight;
-import net.java.cargotracker.domain.model.handling.CannotCreateHandlingEventException;
-import net.java.cargotracker.domain.model.handling.HandlingEvent;
-import net.java.cargotracker.domain.model.handling.HandlingEventFactory;
-import net.java.cargotracker.domain.model.handling.HandlingEventRepository;
-import net.java.cargotracker.domain.model.handling.HandlingHistory;
-import net.java.cargotracker.domain.model.location.SampleLocations;
-import net.java.cargotracker.domain.model.voyage.SampleVoyages;
 
 /**
  * Loads sample data for demo.
@@ -181,6 +167,17 @@ public class SampleDataGenerator {
                 new Date(timeNow.getTimeInMillis() + 1800000 + (31 * HOUR)), new Date(timeNow.getTimeInMillis() + (34 * HOUR))));
         entityManager.persist(new Flight(45, SampleCarriers.EMIRATES, SampleAirports.HEATHROW, SampleAirports.DUBAI,
                 new Date(timeNow.getTimeInMillis() + (42 * HOUR)), new Date(timeNow.getTimeInMillis() + (49 * HOUR))));
+
+        entityManager.persist(new Flight(334, SampleCarriers.BA, SampleAirports.HEATHROW, SampleAirports.MUMBAI,
+                new Date(timeNow.getTimeInMillis() + (58 * HOUR)), new Date(timeNow.getTimeInMillis() + (66 * HOUR))));
+        entityManager.persist(new Flight(454, SampleCarriers.AIR_CHINA, SampleAirports.HONG_KONG, SampleAirports.BEIJING,
+                new Date(timeNow.getTimeInMillis() + 1800000 + (25 * HOUR)), new Date(timeNow.getTimeInMillis() + (28 * HOUR))));
+        entityManager.persist(new Flight(262, SampleCarriers.LUFTHANSA, SampleAirports.FRANKFURT, SampleAirports.MUNICH,
+                new Date(timeNow.getTimeInMillis() + (50 * HOUR)), new Date(timeNow.getTimeInMillis() + 1800000 + (51 * HOUR))));
+        entityManager.persist(new Flight(734, SampleCarriers.AA, SampleAirports.CHARLOTTE, SampleAirports.DALLAS,
+                new Date(timeNow.getTimeInMillis() + 1800000 + (45 * HOUR)), new Date(timeNow.getTimeInMillis() + (49 * HOUR))));
+        entityManager.persist(new Flight(42, SampleCarriers.AIR_FRANCE, SampleAirports.PARIS_CDG, SampleAirports.NEW_YORK_JFK,
+                new Date(timeNow.getTimeInMillis() + (45 * HOUR)), new Date(timeNow.getTimeInMillis() + (54 * HOUR))));
 
     }
 }

@@ -9,9 +9,7 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Allows manager to add a new flight
@@ -76,7 +74,36 @@ public class AddFlight implements Serializable {
     }
 
     public void add() {
-        //Add the flight
+        //Derive date/times
+        Calendar startDate = new GregorianCalendar();
+        Calendar flyTime = new GregorianCalendar();
+        startDate.setTime(flyDate);
+        flyTime.setTime(startTime);
+        startDate.set(Calendar.HOUR, flyTime.get(Calendar.HOUR));
+        startDate.set(Calendar.MINUTE, flyTime.get(Calendar.MINUTE));
+        startDate.set(Calendar.SECOND, 0);
+        startDate.set(Calendar.MILLISECOND, 0);
+
+        Calendar endDate = startDate;
+        flyTime.setTime(endTime);
+        endDate.set(Calendar.HOUR, flyTime.get(Calendar.HOUR));
+        endDate.set(Calendar.MINUTE, flyTime.get(Calendar.MINUTE));
+        endDate.set(Calendar.SECOND, 0);
+        endDate.set(Calendar.MILLISECOND, 0);
+
+        if(startDate.getTimeInMillis() > endDate.getTimeInMillis()) {
+            endDate.set(Calendar.DATE, startDate.get(Calendar.DATE) + 1);
+        }
+
+        //add flight
+        airService.addFlight(555,
+            airService.findCarrier(getAirlineCode()),
+            airService.findAirport(getFromPort()),
+            new Date(startDate.getTimeInMillis()),
+            airService.findAirport(getToPort()),
+            new Date(endDate.getTimeInMillis()));
+
+        RequestContext.getCurrentInstance().closeDialog("");
     }
 
 }

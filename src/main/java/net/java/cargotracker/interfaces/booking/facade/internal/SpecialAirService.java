@@ -30,8 +30,8 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
     private FlightRepo flightRepo;
 
     @Override
-    public void addFlight(int flightNo, Airport from, Date departs, Airport to, Date arrives) {
-
+    public void addFlight(int flightNo, Carrier airline, Airport from, Date departs, Airport to, Date arrives) {
+        flightRepo.add(new Flight(flightNo, airline, from, to, departs, arrives));
     }
 
     public Flight getFlight(int flightNo) {
@@ -53,6 +53,21 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
     @Override
     public boolean cxlBook(int flightNo, String flyer, boolean isBusinessClass) {
         return false;
+    }
+
+    @Override
+    public Carrier findCarrier(String code) {
+        return carrierRepo.find(code);
+    }
+
+    @Override
+    public Airport findAirport(String code) {
+        return airportRepo.find(code);
+    }
+
+    @Override
+    public Flight findFlight(int code) {
+        return flightRepo.find(code);
     }
 
     @Override

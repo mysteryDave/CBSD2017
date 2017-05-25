@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface AirServiceFacade {
 
-    void addFlight(int flightNo, Airport from, Date departs, Airport to, Date arrives);
+    void addFlight(int flightNo, Carrier airline, Airport from, Date departs, Airport to, Date arrives);
 
     Flight getFlight(int flightNo);
 
@@ -22,6 +22,12 @@ public interface AirServiceFacade {
     void bookSeat(int flightNo, String flyer, boolean isBusinessClass);
 
     boolean cxlBook(int flightNo, String flyer, boolean isBusinessClass);
+
+    Carrier findCarrier(String code);
+
+    Airport findAirport(String code);
+
+    Flight findFlight(int code);
 
     List<Airport> listAirports();
 

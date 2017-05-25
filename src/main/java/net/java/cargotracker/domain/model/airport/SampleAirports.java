@@ -1,8 +1,5 @@
 package net.java.cargotracker.domain.model.airport;
 
-import net.java.cargotracker.domain.model.location.Location;
-import net.java.cargotracker.domain.model.location.UnLocode;
-
 /**
  * Sample locations, for test purposes.
  */

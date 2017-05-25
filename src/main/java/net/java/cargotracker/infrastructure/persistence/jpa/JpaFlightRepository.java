@@ -43,7 +43,7 @@ public class JpaFlightRepository implements FlightRepo, Serializable {
     }
 
     @Override
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    @Transactional
     public void add(Flight flight) { entityManager.persist(flight); }
 
     @Override
