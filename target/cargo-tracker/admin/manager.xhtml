@@ -9,7 +9,12 @@
                 <div class="ui-grid-row">
                     <div class="ui-grid-col-1" id="leftCol"/>
                     <div class="ui-grid-col-10" id="mainCol">
-                        <p:commandButton icon="fa fa-plus-square-o" value="New Flight" action="#{cancelFlightDialog.cancel()}"/>
+
+                        <p:commandButton value="New Flight" action="#{addFlightDialog.add()}">
+                            <i class="fa fa-plus-square-o" style="color: #999999;"></i>
+                            <p:ajax event="dialogReturn" listener="#{addFlightDialog.handleReturn}" update="mainDash"/>
+                        </p:commandButton>
+
                         <h:form id="mainDash">
                             <p:dashboard id="board" model="#{managerView.model}">
 

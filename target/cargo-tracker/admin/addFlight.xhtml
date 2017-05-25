@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    <h:head>
+        <title>
+            New Flight
+        </title>
+        <h:outputStylesheet name="dd.css"/>
+    </h:head>
+
+    <h:body>
+
+        <h:form>
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td><p:outputLabel value="carrier" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><p:outputLabel value="from" /></td>
+                    </tr>
+                    <tr>
+                        <td><p:outputLabel value="leaving" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><p:outputLabel value="to" /></td>
+                        <</tr>
+                    <tr>
+                        <td><p:outputLabel value="arriving" /></td>
+                    </tr>
+
+
+                    <tr><td>
+                        <p:outputLabel value="Add Flight?" />
+                    </td><td><br/><br/></td></tr> <!-- TODO: bottom align instead of this! -->
+                    
+                    <tr>
+                        <td>
+                            <p:commandButton value="Yes" action="#{addFlight.createFlight()}"/>
+                        </td>
+                        <td>
+                            <p:commandButton value="No" action="#{addFlightDialog.close()}" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </h:form>
+       
+    </h:body>
+</html>
