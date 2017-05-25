@@ -102,8 +102,7 @@ public class AddFlight implements Serializable {
         }
 
         //add flight
-        airService.addFlight(555,
-            airService.findCarrier(getAirlineCode()),
+        airService.addFlight( airService.findCarrier(getAirlineCode()),
             airService.findAirport(getFromPort()),
             new Date(startDate.getTimeInMillis()),
             airService.findAirport(getToPort()),

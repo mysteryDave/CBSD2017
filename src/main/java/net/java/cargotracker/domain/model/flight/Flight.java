@@ -75,13 +75,14 @@ public class Flight implements Serializable {
             = new SimpleDateFormat("hh:mm a z");
 
     private static final long serialVersionUID = 1L;
-    // Auto-generated surrogate key
-    @Id
-    @GeneratedValue
-    private Long id;
 
+    @SequenceGenerator(name="max1k", initialValue=0, allocationSize=1000)
+
+    //Use auto-generated flight number as key
+    @Id
     @NotNull
-    @Column(name = "flight_number", updatable = false)
+    @Column(updatable = false)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "max1k")
     private int number;
     @NotNull
     @ManyToOne
@@ -106,7 +107,7 @@ public class Flight implements Serializable {
 
     public Flight() {}
 
-    public Flight(int number, Carrier airline, Airport from, Airport to, Date leaves, Date lands) {
+    public Flight(Carrier airline, Airport from, Airport to, Date leaves, Date lands) {
         Validate.notNull(number, "Tracking ID is required.");
         Validate.inclusiveBetween(0,999,number,"Flight number must be positive and below 1,000.");
         Validate.notNull(airline, "Flight must be run by an airline.");

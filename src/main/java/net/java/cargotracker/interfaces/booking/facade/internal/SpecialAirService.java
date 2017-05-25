@@ -30,8 +30,8 @@ public class SpecialAirService implements AirServiceFacade, Serializable {
     private FlightRepo flightRepo;
 
     @Override
-    public void addFlight(int flightNo, Carrier airline, Airport from, Date departs, Airport to, Date arrives) {
-        flightRepo.add(new Flight(flightNo, airline, from, to, departs, arrives));
+    public void addFlight(Carrier airline, Airport from, Date departs, Airport to, Date arrives) {
+        flightRepo.add(new Flight(airline, from, to, departs, arrives));
     }
 
     public Flight getFlight(int flightNo) {

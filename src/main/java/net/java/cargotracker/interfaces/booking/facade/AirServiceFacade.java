@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface AirServiceFacade {
 
-    void addFlight(int flightNo, Carrier airline, Airport from, Date departs, Airport to, Date arrives);
+    void addFlight(Carrier airline, Airport from, Date departs, Airport to, Date arrives);
 
     Flight getFlight(int flightNo);
 
