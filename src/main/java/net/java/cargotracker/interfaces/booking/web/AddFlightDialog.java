@@ -5,7 +5,6 @@ import org.primefaces.context.RequestContext;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +16,6 @@ import java.util.Map;
 @ManagedBean
 @SessionScoped
 public class AddFlightDialog implements Serializable {
-
 
     public void showDialog() {
         Map<String, Object> options = new HashMap<>();
@@ -39,7 +37,6 @@ public class AddFlightDialog implements Serializable {
         // just kill the dialog
         RequestContext.getCurrentInstance().closeDialog("");
     }
-
 
 }
 
