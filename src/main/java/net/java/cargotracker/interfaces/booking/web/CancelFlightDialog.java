@@ -35,6 +35,10 @@ public class CancelFlightDialog implements Serializable {
         RequestContext.getCurrentInstance().openDialog("/admin/cancelFlight.xhtml", options, params);
     }
 
+    public void handleReturn() {
+        RequestContext.getCurrentInstance().update("flights_table");
+    }
+
     public void close() {
         // just kill the dialog
         RequestContext.getCurrentInstance().closeDialog("");

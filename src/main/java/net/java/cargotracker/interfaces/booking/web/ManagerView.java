@@ -30,10 +30,7 @@ public class ManagerView implements Serializable{
         this.model = new DefaultDashboardModel();
         DashboardColumn mainColumn = new DefaultDashboardColumn();
 
-        mainColumn.addWidget("Flights");
-        mainColumn.addWidget("Routed");
-        mainColumn.addWidget("All");
-        mainColumn.addWidget("Carriers");
+        mainColumn.addWidget("mngFlights");
  
         this.model.addColumn(mainColumn);
  

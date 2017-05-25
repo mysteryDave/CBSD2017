@@ -30,10 +30,7 @@ public class FlyerView implements Serializable{
         this.model = new DefaultDashboardModel();
         DashboardColumn mainColumn = new DefaultDashboardColumn();
 
-        mainColumn.addWidget("Flights");
-        mainColumn.addWidget("Routed");
-        mainColumn.addWidget("All");
-        mainColumn.addWidget("Airports");
+        mainColumn.addWidget("custFlights");
  
         this.model.addColumn(mainColumn);
  
