@@ -9,6 +9,7 @@
                 <div class="ui-grid-row">
                     <div class="ui-grid-col-1" id="leftCol"/>
                     <div class="ui-grid-col-10" id="mainCol">
+                        <p:commandButton value="New Flight" action="#{cancelFlightDialog.cancel()}"/>
                         <h:form id="mainDash">
                             <p:dashboard id="board" model="#{managerView.model}">
 
