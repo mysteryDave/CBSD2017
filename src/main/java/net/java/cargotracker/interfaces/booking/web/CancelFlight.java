@@ -2,17 +2,12 @@ package net.java.cargotracker.interfaces.booking.web;
 
 import net.java.cargotracker.domain.model.flight.Flight;
 import net.java.cargotracker.interfaces.booking.facade.AirServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.BookingServiceFacade;
-import net.java.cargotracker.interfaces.booking.facade.dto.CargoRoute;
-import net.java.cargotracker.interfaces.booking.facade.dto.Location;
 import org.primefaces.context.RequestContext;
 
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Allows manager to cancel a flight
