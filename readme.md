@@ -14,15 +14,17 @@ Intention was to have a basic view for all users that listed flights and user de
 Project code is taken from Cargo-Tracker java EE 7 example and modified to (begin) meeting the coursework specification.
 
 Currently this has acheived: creating entity models for airports, airlines and flights, and displaying a list of available flights.
+It also allows adding or removing of flights.
 
 Completed steps:
   Model airport entity.
   Model carrier(airline) entity.
   Model flight entity - linking two airports via a carrier.
   Display flights.
+  Complete functionality to allow reservation manager to cancel and add flights.
 
 Remaining steps to be done:
-  Complete functionality to allow reservation manager to cancel and add flights.
+  
   Build functionality for users to register themselves.
     Model user entity
     Add username/password login to replace customer/manager links
