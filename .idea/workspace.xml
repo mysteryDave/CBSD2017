@@ -2,366 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0b58f9-43b8-4273-95bc-5e8442dd05b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/ApplicationEvents.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/BookingService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/CargoInspectionService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/HandlingEventService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/internal/DefaultBookingService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/internal/DefaultCargoInspectionService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/internal/DefaultHandlingEventService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/DateUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/JsonMoxyConfigurationContextResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/LocationUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/application/util/RestConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/BookingBackingBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/Cargo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/CargoRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/Delivery.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/HandlingActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/Itinerary.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/Leg.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/RouteSpecification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/RoutingStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/TrackingId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/TransportStatus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/cargo/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/CannotCreateHandlingEventException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/HandlingEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/HandlingEventFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/HandlingEventRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/HandlingHistory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/UnknownCargoException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/UnknownLocationException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/UnknownVoyageException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/handling/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/location/Location.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/location/LocationRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/location/SampleLocations.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/location/UnLocode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/location/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/CarrierMovement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/SampleVoyages.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/Schedule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/Voyage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/VoyageNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/VoyageRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/service/RoutingService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/shared/AbstractSpecification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/shared/AndSpecification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/shared/DomainObjectUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/shared/NotSpecification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/shared/OrSpecification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/events/cdi/CargoInspected.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/CargoHandledConsumer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/DeliveredCargoConsumer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/HandlingEventRegistrationAttemptConsumer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/JmsApplicationEvents.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/MisdirectedCargoConsumer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/messaging/jms/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaCargoRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaHandlingEventRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaLocationRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/persistence/jpa/JpaVoyageRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/routing/ExternalRoutingService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/infrastructure/routing/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/BookingServiceFacade.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/dto/CargoRoute.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/dto/Leg.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/dto/Location.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/dto/RouteCandidate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/DefaultBookingServiceFacade.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/assembler/CargoRouteDtoAssembler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/assembler/ItineraryCandidateDtoAssembler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/internal/assembler/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/rest/CargoMonitoringService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/socket/ObservedCargoReporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/socket/RealtimeCargoTrackingService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CargoAdmin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CargoDetails.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ChangeDestination.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ChangeDestinationDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/DashboardView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ItinerarySelection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ListCargo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/Registration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/EventFilesCheckpoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/EventItemReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/EventItemWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/EventLineParseException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/FileProcessorJobListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/LineParseExceptionListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/UploadDirectoryScanner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/file/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/mobile/EventBackingBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/mobile/HolderBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/rest/HandlingReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/rest/HandlingReportService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/handling/rest/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/tracking/web/Track.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/tracking/web/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/api/GraphTraversalService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/api/TransitEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/api/TransitPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/api/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/internal/GraphDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/internal/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/java/pathfinder/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/application/BookingServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/application/BookingServiceTestDataGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/application/BookingServiceTestRestConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/application/HandlingEventServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/domain/model/cargo/CargoTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/domain/model/cargo/ItineraryTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/domain/model/cargo/RouteSpecificationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/domain/model/handling/HandlingEventTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/domain/model/handling/HandlingHistoryTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/net/java/cargotracker/scenario/CargoLifecycleScenarioTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/arquillian.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/test-web-weblogic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/test-web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/soapui/CargoTracker_soapUI_project.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/soapui/report_json_sample.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/ApplicationEvents.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/BookingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/CargoInspectionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/HandlingEventService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/internal/DefaultBookingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/internal/DefaultCargoInspectionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/internal/DefaultHandlingEventService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/DateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/JsonMoxyConfigurationContextResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/LocationUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/RestConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/BookingBackingBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/Cargo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/CargoRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/Delivery$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/Delivery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/HandlingActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/Itinerary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/Leg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/RouteSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/RoutingStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/TrackingId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/cargo/TransportStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/CannotCreateHandlingEventException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingEvent$Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingEventFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingEventRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingHistory$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/HandlingHistory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/UnknownCargoException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/UnknownLocationException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/handling/UnknownVoyageException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/location/Location.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/location/LocationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/location/SampleLocations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/location/UnLocode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/CarrierMovement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/SampleVoyages.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/Schedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/Voyage$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/Voyage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/VoyageNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/voyage/VoyageRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/service/RoutingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/shared/AbstractSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/shared/AndSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/shared/DomainObjectUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/shared/NotSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/shared/OrSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/events/cdi/CargoInspected.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/CargoHandledConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/DeliveredCargoConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/HandlingEventRegistrationAttemptConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/JmsApplicationEvents.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/MisdirectedCargoConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaCargoRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaHandlingEventRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaLocationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaVoyageRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/routing/ExternalRoutingService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/infrastructure/routing/ExternalRoutingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/BookingServiceFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/dto/CargoRoute.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/dto/Leg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/dto/Location.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/dto/RouteCandidate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/internal/DefaultBookingServiceFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/CargoRouteDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/ItineraryCandidateDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/rest/CargoMonitoringService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/socket/ObservedCargoReporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/socket/RealtimeCargoTrackingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/CargoAdmin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/CargoDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/ChangeDestination.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/ChangeDestinationDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/DashboardView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/ItinerarySelection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/ListCargo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/Registration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/EventFilesCheckpoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/EventItemReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/EventItemWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/EventLineParseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/FileProcessorJobListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/LineParseExceptionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/file/UploadDirectoryScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/mobile/EventBackingBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/mobile/HolderBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/rest/HandlingReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/handling/rest/HandlingReportService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter$HandlingEventViewAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/tracking/web/Track.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/pathfinder/api/GraphTraversalService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/pathfinder/api/TransitEdge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/pathfinder/api/TransitPath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/pathfinder/internal/GraphDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/ApplicationEvents.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/BookingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/CargoInspectionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/HandlingEventService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/internal/DefaultBookingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/internal/DefaultCargoInspectionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/internal/DefaultHandlingEventService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/DateUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/JsonMoxyConfigurationContextResolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/LocationUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/RestConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/BookingBackingBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/Cargo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/CargoRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/Delivery$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/Delivery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/HandlingActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/Itinerary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/Leg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/RouteSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/RoutingStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/TrackingId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/cargo/TransportStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/CannotCreateHandlingEventException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingEvent$Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingEventFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingEventRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingHistory$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/HandlingHistory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/UnknownCargoException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/UnknownLocationException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/handling/UnknownVoyageException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/location/Location.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/location/LocationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/location/SampleLocations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/location/UnLocode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/CarrierMovement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/SampleVoyages.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/Schedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/Voyage$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/Voyage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/VoyageNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/voyage/VoyageRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/service/RoutingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/shared/AbstractSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/shared/AndSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/shared/DomainObjectUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/shared/NotSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/shared/OrSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/events/cdi/CargoInspected.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/CargoHandledConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/DeliveredCargoConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/HandlingEventRegistrationAttemptConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/JmsApplicationEvents.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/MisdirectedCargoConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/messaging/jms/RejectedRegistrationAttemptsConsumer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaCargoRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaHandlingEventRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaLocationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/persistence/jpa/JpaVoyageRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/routing/ExternalRoutingService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/infrastructure/routing/ExternalRoutingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/BookingServiceFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/dto/CargoRoute.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/dto/Leg.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/dto/Location.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/dto/RouteCandidate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/internal/DefaultBookingServiceFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/CargoRouteDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/ItineraryCandidateDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/facade/internal/assembler/LocationDtoAssembler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/rest/CargoMonitoringService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/socket/ObservedCargoReporter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/socket/RealtimeCargoTrackingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/CargoAdmin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/CargoDetails.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/ChangeDestination.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/ChangeDestinationDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/DashboardView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/ItinerarySelection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/ListCargo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/Registration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/HandlingEventRegistrationAttempt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/EventFilesCheckpoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/EventItemReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/EventItemWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/EventLineParseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/FileProcessorJobListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/LineParseExceptionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/file/UploadDirectoryScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/mobile/EventBackingBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/mobile/HolderBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/rest/HandlingReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/handling/rest/HandlingReportService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter$HandlingEventViewAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/tracking/web/CargoTrackingViewAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/tracking/web/Track.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/pathfinder/api/GraphTraversalService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/pathfinder/api/TransitEdge.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/pathfinder/api/TransitPath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/java/pathfinder/internal/GraphDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/arquillian.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/application/BookingServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/application/BookingServiceTestDataGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/application/BookingServiceTestRestConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/application/HandlingEventServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/cargo/CargoTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/cargo/CargoTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/cargo/ItineraryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/cargo/RouteSpecificationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/handling/HandlingEventTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/domain/model/handling/HandlingHistoryTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/infrastructure/routing/ExternalRoutingServiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/scenario/CargoLifecycleScenarioTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/net/java/cargotracker/scenario/CargoLifecycleScenarioTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/test-web-weblogic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/test-web.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker.war" afterPath="$PROJECT_DIR$/target/cargo-tracker.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" afterPath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/flight/Flight.class" afterPath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/domain/model/flight/Flight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/CancelFlight.class" afterPath="$PROJECT_DIR$/target/cargo-tracker/WEB-INF/classes/net/java/cargotracker/interfaces/booking/web/CancelFlight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" afterPath="$PROJECT_DIR$/target/classes/net/java/cargotracker/application/util/SampleDataGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/flight/Flight.class" afterPath="$PROJECT_DIR$/target/classes/net/java/cargotracker/domain/model/flight/Flight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/CancelFlight.class" afterPath="$PROJECT_DIR$/target/classes/net/java/cargotracker/interfaces/booking/web/CancelFlight.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/about.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/changeDestination.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/dashboard.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/js/listRouted.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/listNotRouted.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/listObserved.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/listRouted.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/map.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/mapFrame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/route.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/selectItinerary.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/show.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/track.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/booking/booking-date.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/booking/booking-destination.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/booking/booking-flow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/booking/booking.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/booking/todo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/eventLogger/eventLogger-flow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/eventLogger/eventLogger.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/eventLogger/root.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/CTlogo128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/CTlogobadge128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cargo-tracker-banner-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cargo-tracker-banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cargo-tracker-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/images/cargoTug.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/mobile.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/about.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/public/track.xhtml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CancelFlight.java" afterPath="$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CancelFlight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cargo-tracker/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/cargo-tracker/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -387,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CancelFlight.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CancelFlight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CancelFlight.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
@@ -411,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Flight.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="544">
               <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
@@ -618,28 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineTravele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OnlineTravele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1273,7 +922,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101353000" />
+    <option name="totallyTimeSpent" value="101826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2569" y="-9" width="2578" height="1408" extended-state="6" />
@@ -1402,49 +1051,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ItinerarySelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/facade/BookingServiceFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/listNotRouted.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ChangeDestinationDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ChangeDestination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="74" column="4" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/VoyageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/voyage/Voyage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1669,14 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/Registration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1757,16 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CancelFlight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/ListCargo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1787,6 +1375,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/cargo-tracker-banner.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/CTlogo128.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/CTlogobadge128.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/listRouted.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/interfaces/booking/web/CancelFlight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/public/about.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/about.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/java/cargotracker/domain/model/flight/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
