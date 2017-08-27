@@ -3,3 +3,6 @@
 *.html linguist-vendored
 *.xhtml linguist-vendored
 *.xml linguist-vendored
+weblogic/* linguist-vendored
+src/main/resources/* linguist-vendored
+src/main/webapp/* linguist-vendored
