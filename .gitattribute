@@ -1,4 +1,4 @@
-* linguist-language=Java
+
 *.css linguist-vendored
 *.html linguist-vendored
 *.xhtml linguist-vendored
@@ -6,3 +6,8 @@
 weblogic/* linguist-vendored
 src/main/resources/* linguist-vendored
 src/main/webapp/* linguist-vendored
+target/cargo-tracker/admin/* linguist-vendored
+target/cargo-tracker/resources/* linguist-vendored
+target/cargo-tracker/WEB-INF/templates/* linguist-vendored
+
+* linguist-language=Java
